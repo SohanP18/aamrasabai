@@ -48,14 +48,14 @@ gsap.to(".main",{
 })
 
 gsap.from(".aboutus img, .aboutusin",{
-    y:50,
+    y:60,
     opacity: 0,
     duration: 1,
     stagger: 0.4,
     scrollTrigger:{
-        trigger:"aboutus",
+        trigger:".aboutus",
         scroller:"body",
-        start:"top 60%",
+        start:"top 55%",
         end:"top 55%",
         scrub: 3
     }
