@@ -12,8 +12,8 @@ html, body {
 }
 
 .cursor{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     background-color: rgb(255, 251, 0);
     border-radius: 50%;
     position: fixed;
@@ -21,9 +21,9 @@ html, body {
 }
 
 .cursor-blur{
-    height: 300px;
-    width: 300px;
-    background-color: rgba(255, 208, 0, 0.432);
+    height: 350px;
+    width: 350px;
+    background-color: rgba(255, 255, 0, 0.445);
     border-radius: 50%;
     position: fixed;
     filter: blur(60px);
@@ -195,6 +195,7 @@ video{
 .cards-cont{
     height: 60vh;
     display: flex;
+    margin: 25px 100px;
     align-items: center;
     gap: 20px;
     position: relative;
@@ -204,7 +205,7 @@ video{
 
 .card{
     height: 80%;
-    width: 23%;
+    width: 25%;
     border-radius: 20px;
     overflow: hidden;
     background-size: cover;
@@ -294,14 +295,14 @@ video{
 }
 
 #page3>p{
-    width: 60%;
+    width: 55%;
     line-height: 45px;
     font-size: 36px;
     font-weight: 700;
 }
 
 #page3>h5{
-    width: 60%;
+    width: 55%;
     margin-top: 20px;
     line-height: 45px;
     color: yellow;
@@ -323,3 +324,80 @@ video{
     right: 15%;
     bottom: 25%;
 }
+
+#page4{
+    height: 30vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 55px;
+    z-index: 10;
+}
+
+.elem{
+    height: 60%;
+    width: 23%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.elem h2{
+    height: 100%;
+    width: 100%;
+    color: #161515;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+    scale: 1.1;
+}
+
+.elem:hover h2{
+    color: #161515;
+    background-color: transparent;
+}
+
+.elem:hover img{
+    scale: 1;
+}
+
+#page4 h1{
+    font-size: 90px;
+    font-weight: 900;
+    position: absolute;
+    top: -8%;
+    color: black;
+    -webkit-text-stroke: 1.5px #fff;
+}
+
+.footer{
+    height: 40vh;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    gap: 150px;
+    padding: 0 100px;
+    background: linear-gradient(to left bottom,yellow,green);
+}
+
