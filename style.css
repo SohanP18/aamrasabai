@@ -300,6 +300,15 @@ video{
     font-weight: 700;
 }
 
+#page3>h5{
+    width: 60%;
+    margin-top: 20px;
+    line-height: 45px;
+    color: yellow;
+    font-size: 60px;
+    font-weight: 800;
+}
+
 #page3 img{
     position: absolute;
     height: 65px;
