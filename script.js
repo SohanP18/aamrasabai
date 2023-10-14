@@ -51,12 +51,11 @@ gsap.from(".aboutus img, .aboutusin",{
     y:60,
     opacity: 0,
     duration: 1,
-    stagger: 0.4,
     scrollTrigger:{
         trigger:".aboutus",
         scroller:"body",
         start:"top 55%",
         end:"top 55%",
-        scrub: 3
+        scrub: 2
     }
 })
