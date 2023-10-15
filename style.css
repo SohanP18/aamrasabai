@@ -401,3 +401,307 @@ video{
     background: linear-gradient(to left bottom,yellow,green);
 }
 
+
+/* Add a media query for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+
+    .nav{
+        height: 100px;
+        display: flex;
+        padding: 0 15px;
+        gap: 15px;
+        z-index: 99;
+    }
+    
+    .nav img{
+        height: 30px;
+    }
+    
+    .nav h4{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    
+
+  /* Page1 */  
+
+    #page1{
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        z-index: 10;
+    }
+    
+    #page1 h1{
+        font-size: 80px;
+        font-weight: 900;
+        position: relative;
+    }
+    
+    #page1 h1::before{
+        content: "DURGA POOJA 2023.";
+        color: #000000ad;
+        position: absolute;
+        top: -4px;
+        right: -4px;
+        -webkit-text-stroke: 1px rgb(255, 238, 0);
+        z-index: -1;
+    }
+    
+    #page1 h2{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 10px 0 20px 0;
+    }
+    
+    #page1 p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+  /* Page2 */  
+        
+    #page2{
+        min-height: 100vh;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .scroller{
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        position: relative;
+        z-index: 10;
+    }
+
+    .scroller::-webkit-scrollbar{
+        display: none;
+    }
+
+    .scroller1{
+        display: inline-block;
+        white-space: nowrap;
+        animation-name: scroll;
+        animation-duration: 25s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    .scroller h4{
+        display: inline-block;
+        font-size: 60px;
+        font-weight: 900;
+        -webkit-text-stroke: 0.5px #fff;
+    }
+
+    .scroller h4:hover{
+        color: yellow;
+        -webkit-text-stroke: 0px #fff;
+    }
+
+    @keyframes scroll {
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-100%);
+        }
+    }
+
+    .aboutus{
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        z-index: 10;
+        padding: 0 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .aboutus img{
+        display: none;
+        height: 200px;
+        object-fit: cover;
+        transition: all ease 0.6s;
+    }
+
+    .aboutusin{
+        width: 100%;
+        text-align: center;
+    }
+
+    .aboutusin h3{
+        font-size: 40px;
+        font-weight: 800;
+        margin-bottom: 40px;
+    }
+
+    .aboutusin p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .cards-cont{
+        height: 60vh;
+        display: inline-block;
+        padding: 30px;
+        margin: 15px 20px;
+        z-index: 10;
+    }
+
+    .card{
+        height: 80%;
+        border-radius: 20px;
+        margin: 25px 5px;
+    }
+
+    .overlay{
+        height: 100%;
+        opacity: 0;
+        background-color: yellow;
+        padding: 14px 50px 50px 50px;
+        transition: all ease 0.6s;
+    }
+
+    .overlay h4{
+        font-size: 38px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: rgb(26, 24, 24);
+    }
+
+    .overlay p{
+        margin-top: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(26, 24, 24);
+    }
+
+    .card:hover .overlay{
+        opacity: 1;
+    }
+
+    .card:hover{
+        transform: rotate3d(-1,1,0,15deg);
+    }
+
+    .yellowdiv{
+        height: 25vh;
+        display: flex;
+        margin-top: 10%;
+    }
+
+    .yellowdiv h4{
+        width: 80%;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .yellowdiv img{
+        height: 100%;
+        width: 15%;
+        object-fit: cover;
+    }
+
+    .aboutus img {
+        height: 200px; /* Reduce image size for smaller screens */
+    }
+
+    .card {
+        width: 100%; /* Expand cards to full width on smaller screens */
+    }
+
+
+      /* Page3 */  
+
+    #page3{
+        height: 98vh;
+    }
+
+    #page3>p{
+        width: 90%;
+        line-height: 35px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #page3>h5{
+        width: 90%;
+        margin-top: 10px;
+        line-height: 45px;
+        color: yellow;
+        font-size: 40px;
+        font-weight: 800;
+    }
+
+    #page3 #colon1{
+        left: 18%;
+        top: 25%;
+    }
+
+    #page3 #colon2{
+        right: 20%;
+        bottom: 25%;
+    }
+
+    #page3 img {
+        height: 40px; /* Reduce image size for smaller screens */
+    }
+
+    #page3 h1 {
+        font-size: 60px; /* Adjust font size for smaller screens */
+    }
+
+
+  /* Page4 */  
+
+    #page4{
+        height: 25vh;
+        gap: 20px;
+    }
+
+    .elem{
+        height: 30%;
+        width: 28%;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .elem h2{
+        height: 100%;
+        width: 100%;
+        color: #161515;
+        background-color: yellow;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 900;
+    }
+
+    .elem img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 0.5s;
+        scale: 1.1;
+    }
+
+    #page4 h1 {
+        font-size: 40px;
+        -webkit-text-stroke: 0.6px #fff;
+        top: -14%;
+    }
+
+    .footer {
+        gap: 20px; /* Reduce gap between elements for smaller screens */
+        padding: 0 20px; /* Reduce padding for smaller screens */
+    }
+}
